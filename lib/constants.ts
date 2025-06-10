@@ -1,1 +1,1 @@
-export const HOST_NAME = "http://localhost:8001/api";
+export const HOST_NAME = "https://nirnai-backend.vercel.app/api";
