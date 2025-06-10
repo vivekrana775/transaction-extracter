@@ -476,24 +476,23 @@ export default function Dashboard() {
                 </div>
               </CardContent>
             </Card>
-
-            {/* PDF Preview (Desktop) */}
-            {pdfUrl && (
-              <Card className="hidden lg:block">
-                <CardHeader>
-                  <CardTitle>PDF Preview</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <iframe
-                    src={pdfUrl}
-                    className="w-full h-[400px] border rounded"
-                    title="PDF Preview"
-                  />
-                </CardContent>
-              </Card>
-            )}
           </div>
         </div>
+        {/* PDF Preview (Desktop) */}
+        {pdfUrl && (
+          <Card className="hidden lg:block m-10">
+            <CardHeader>
+              <CardTitle>PDF Preview</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <iframe
+                src={pdfUrl}
+                className="w-full h-[2000px] border rounded"
+                title="PDF Preview"
+              />
+            </CardContent>
+          </Card>
+        )}
       </div>
     </div>
   );
